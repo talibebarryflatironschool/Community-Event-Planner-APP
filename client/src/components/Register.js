@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
+import './Auth.css';
 
 const RegisterSchema = Yup.object().shape({
   username: Yup.string().required('Username is required'),
